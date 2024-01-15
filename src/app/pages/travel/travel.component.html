@@ -1,0 +1,21 @@
+<div class="container trend-travel mt-5 mb-5">
+    <h1 class="text-center">Viagens</h1>
+    <div class="row pt-4">
+        <div class="col-lg-3 d-flex justify-content-center pb-3" *ngFor="let tr of travelData;">
+            <div class="card" style="width: 24rem;">
+                <img src="{{tr.travelImg}}" class="card-img-top" alt="{{tr.descriptionImg}}">
+                <div class="card-body">
+                    <p class="country">{{tr.country}}</p>
+                    <h4 class="card-title">{{tr.city}}</h4>
+                    <p class="card-text description">{{tr.description}}</p>
+                    <h4 class="card-title price"><b>{{tr.pricePackage | currency:'BRL'}}</b></h4>
+                    <div class="d-flex justify-content-center">
+                        <button>
+                            <a [routerLink]="['/travel',tr.id]">Saiba Mais</a>
+                        </button>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

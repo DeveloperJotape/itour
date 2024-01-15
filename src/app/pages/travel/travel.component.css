@@ -1,0 +1,17 @@
+.card img {
+    height: 250px;
+}
+
+.card .description {
+    max-width: 80ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card button {
+    margin-top: 20px;
+    top: 100%;
+    position: sticky;
+}
+

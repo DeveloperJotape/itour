@@ -1,0 +1,35 @@
+<div class="banner">
+    <div class="content container d-flex justify-content-center">
+        <div class="info-banner text-center">
+            <h1>iTour</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dolorem eligendi cumque debitis
+                officia, ad suscipit ratione accusantium exercitationem cupiditate?</h4>
+            <h5>Confira nossos melhores destinos</h5>
+            <button>
+                <a routerLink="travel"> Viagens<i class="fa-solid fa-plane"></i></a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container trend-travel mt-5 mb-5">
+    <h1 class="text-center">Principais viagens do mês</h1>
+    <div class="row pt-4">
+        <div class="col-lg-4 d-flex justify-content-center pb-3" *ngFor="let tr of travelData.sort().reverse(); index as i">
+            <div class="card" style="width: 24rem;" *ngIf="i<=2">
+                <img src="{{tr.travelImg}}" class="card-img-top" alt="{{tr.descriptionImg}}">
+                <div class="card-body">
+                    <p class="country">{{tr.country}}</p>
+                    <h4 class="card-title">{{tr.city}}</h4>
+                    <p class="card-text description">{{tr.description}}</p>
+                    <h4 class="card-title price"><b>{{tr.pricePackage | currency:'BRL'}}</b></h4>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button>
+                <a routerLink="travel"><i class="fa-solid fa-circle-plus"></i> Destinos</a>
+            </button>
+        </div>
+    </div>
+</div>

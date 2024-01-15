@@ -1,0 +1,60 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../../assets/images/banner-3.jpg) no-repeat center;
+    height: 80vh;
+    background-position: center top;
+    background-size: cover;
+}
+
+.content {
+    padding-top: 15vh;
+}
+
+.info-banner {
+    padding: 40px 0;
+    width: 50vw;
+}
+
+.info-banner h1 {
+    font-size: 80px;
+    color: var(--light-color);
+    margin-bottom: 40px;
+}
+
+.info-banner h4 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--light-color);
+}
+
+.info-banner h5 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 40px;
+    color: var(--light-color);
+}
+
+.card img {
+    height: 250px;
+}
+
+.card .description {
+    max-width: 80ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card .price {
+    top: 100%;
+    position: sticky;
+}
+
+@media (max-width: 700px) {
+    .content {
+        padding-top: 10vh;
+    }
+
+    .info-banner {
+        width: 90vw;
+    }
+}

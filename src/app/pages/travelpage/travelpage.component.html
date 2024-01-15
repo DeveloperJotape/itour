@@ -1,0 +1,28 @@
+<div class="container trend-travel mt-5 mb-5" *ngIf="travelData">
+    <div class="row pt-4 content d-flex">
+        <div class="col-lg-6 pb-3">
+            <h1 class="title">{{travelData[0].city}}</h1>
+            <div class="infos">
+                <h4>País: <b>{{travelData[0].country}}</b></h4>
+            </div>
+            <div class="infos">
+                <h4>Comida típica: <b>{{travelData[0].typicalFood}}</b></h4>
+            </div>            
+            <div class="infos">
+                <h4>Valor do pacote: <b>{{travelData[0].pricePackage | currency:'BRL'}}</b></h4>    
+            </div>
+            <div class="infos">
+                <h4>Descrição: </h4>
+                <p>{{travelData[0].description}}</p>
+            </div>           
+        </div>
+        <div class="col-lg-6 pb-3 d-flex justify-content-center align-items-center">
+            <img src="{{travelData[0].travelImg}}" class="card-img-top" alt="{{travelData[0].descriptionImg}}">
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <button>
+            <a routerLink="/travel"> Voltar<i class="fa-solid fa-plane"></i></a>
+        </button>
+    </div>
+</div>

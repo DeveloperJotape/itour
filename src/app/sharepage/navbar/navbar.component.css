@@ -1,0 +1,38 @@
+.navbar {
+    background-color: var(--primary-color);
+}
+.navbar .logo {
+    font-size: 28px;
+}
+.navbar a {   
+    color: var(--light-color);
+    position: relative;
+    font-size: 18px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar-nav a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--light-color);
+    transition: .3s;
+}
+
+.navbar-nav a:hover::before{
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .navbar-toggler {
+        border: 0;      
+    }
+    .navbar-nav a:hover::before{
+        width: 20%;
+    }
+}

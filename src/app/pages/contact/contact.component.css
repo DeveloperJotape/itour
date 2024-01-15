@@ -1,0 +1,40 @@
+.container{
+    height: 70vh;
+    width: 100%;
+    color: var(--light-color);
+}
+.content {  
+    width: 100%;
+    background: var(--primary-color);
+}
+
+.row {
+    padding: 0px 60px ;
+}
+
+.input-left {
+    padding-right: 20px;
+}
+
+.input-right {
+    padding-left: 20px;
+}
+
+button {
+    border: 1px solid var(--primary-color);
+}
+
+button:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+@media (max-width: 700px) {
+    .content{padding: 15px;}
+    .input-left {
+        padding: 0;
+    }
+    .input-right {
+        padding: 0;
+        margin-top: 15px;
+    }
+}
